@@ -1,0 +1,21 @@
+---
+
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  vars:
+     project_dir : "./"
+
+  tasks:
+
+  - name: "terraform apply"
+    community.general.terraform:
+      project_path: "{{ project_dir }}"
+      variables:
+        name: "{{ name_bucket }}"
+      state: present
+      force_init: true
+    register: apply_result
+    tags:
+     - apply
+
