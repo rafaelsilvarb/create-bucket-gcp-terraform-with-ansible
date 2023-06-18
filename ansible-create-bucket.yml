@@ -13,6 +13,7 @@
       project_path: "{{ project_dir }}"
       variables:
         name: "{{ name_bucket }}"
+        project: "{{ name_project }}"
       state: present
       force_init: true
     register: apply_result
