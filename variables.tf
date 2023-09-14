@@ -15,3 +15,9 @@ variable "location" {
   type        = string
   default     = ""
 }
+
+variable "storageclss" {
+  description = "The type the storage class"
+  type        = string
+  default     = ""
+}
