@@ -11,6 +11,7 @@
   - name: "terraform apply"
     community.general.terraform:
       project_path: "{{ project_dir }}"
+      complex_vars: true
       variables:
         name: "{{ name_bucket }}"
         project: "{{ name_project }}"
