@@ -3,7 +3,7 @@
 
 resource "google_storage_bucket" "static" {
  name          = var.name
- location      = "US"
+ location      = "var.location"
  storage_class = "STANDARD"
  project       = var.project
 
