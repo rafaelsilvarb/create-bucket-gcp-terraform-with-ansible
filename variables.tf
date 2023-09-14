@@ -9,3 +9,9 @@ variable "project" {
   type        = string
   default     = ""
 }
+
+variable "location" {
+  description = "The name the location"
+  type        = string
+  default     = ""
+}
