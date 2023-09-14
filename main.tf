@@ -4,7 +4,7 @@
 resource "google_storage_bucket" "static" {
  name          = var.name
  location      = var.location
- storage_class = "STANDARD"
+ storage_class = "REGIONAL"
  project       = var.project
 
  uniform_bucket_level_access = true
