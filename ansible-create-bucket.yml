@@ -15,6 +15,7 @@
         name: "{{ name_bucket }}"
         project: "{{ name_project }}"
         location: "{{ name_location }}"
+        storage_class: "{{ name_storageclass }}"
       state: present
       force_init: true
     register: apply_result
