@@ -16,7 +16,7 @@ variable "location" {
   default     = ""
 }
 
-variable "storageclss" {
+variable "storagecls" {
   description = "The type the storage class"
   type        = string
   default     = ""
