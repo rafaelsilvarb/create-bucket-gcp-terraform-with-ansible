@@ -18,6 +18,6 @@ variable "location" {
 
 variable "storageclass" {
   description = "The type the storage class"
-  type        = string
-  default     = ""
+  type        = map(string)
+  default     = {}
 }
