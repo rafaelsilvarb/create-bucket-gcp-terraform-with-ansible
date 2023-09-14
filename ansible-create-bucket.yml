@@ -14,6 +14,7 @@
       variables:
         name: "{{ name_bucket }}"
         project: "{{ name_project }}"
+        location: "{{ name_location }}"
       state: present
       force_init: true
     register: apply_result
